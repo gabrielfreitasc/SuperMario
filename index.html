@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Bros - O Filme</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="background-video">
+        <video class="video" autoplay loop muted><source src="./assets/video/video-mario.mp4" type="video/mp4"></video>
+    </div>
+
+    <header class="navbar">
+        <a class="logo" href="#"><img src="./assets/img/logo.png" alt="Logo Mário"></a>
+        <nav>
+            <ul class="menu">
+                <a href="https://www.nintendo.com/pt-br/store/products/super-mario-odyssey-switch/">Buy</a>
+                <a href="#">Home</a>
+                <a href="./details.html">Details</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="information">
+            <img class="title-mario" src="./assets/img/title.png" alt="Super Mario">
+            <p class="description">
+                Mario é um encanador junto com seu irmão Luigi. Um dia eles vão parar
+                no reino dos cogumelos, governado pela Princesa Peach, mas 
+                ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar
+                em todos os lugares.
+            </p>
+            <button class="button-trailer">VEJA O TRAILER</button>
+        </div>
+        <img class="mario-img" src="./assets/img/picture.png" alt="">
+
+            <div class="modal">
+                <div class="container-modal">
+                    <span class="close-modal">X</span>
+                    <iframe src="https://www.youtube.com/embed/Cb4WV4aXBpk" width="560" height="315" id="video-modal"
+                    title="Trailer Filme Oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

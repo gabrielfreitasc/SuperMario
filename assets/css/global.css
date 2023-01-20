@@ -1,0 +1,185 @@
+
+body {
+    background: #131212;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+main {
+    margin: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    margin: 10px 30px;
+}
+
+.menu {
+    margin-top: 15px;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.menu a {
+
+    display: inline;
+
+
+    font-size: 20px;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    margin-left: 50px;
+    padding: 10px 25px;
+
+    transition: 0.3s background-color;
+    transition: 0.3s border-color;
+}
+
+.menu a:hover {
+    border-color: rgba(194, 5, 5, 0.637);
+    background-color: rgba(117, 8, 8, 0.637);
+    transition-delay: 0.1s;
+}
+
+.description {
+    color: white;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px 25px;
+    align-items: center;
+    height: calc(100vh - 132px); /*Utilizado neste caso, para retirar o scrool da página, pois estava somando a altura do navbar e do container*/
+}
+
+.information {
+    width: 760px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title-mario {
+    max-width: 500px;
+    
+}
+
+.description {
+    width: 700px;
+}
+
+.button-trailer {
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: white;
+
+    background-color: rgb(187, 0, 0);
+    border-radius: 5px;
+    border: none;
+
+    width: 140px;
+    padding: 15px;
+
+    text-transform: uppercase;
+    transition: 0.5s background-color all ease-in-out;
+}
+
+.button-trailer:hover {
+    background-color: rgb(139, 3, 3);
+    transform: scale(1.1);
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+
+/*Vídeo de fundo*/
+
+.background-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /*Vai remover o scroll da página criado pelo vídeo*/
+}
+
+.background-video::after { /*Criando um pseudoelemento acima do vídeo para dar uma opacidade colorida*/
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.background-video .video {
+    height: 100vh;
+}
+
+/*Modal*/
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    opacity: 0;
+    visibility: hidden; /*Vai esconder o modal para abrir e fechar no JS*/
+}
+
+.container-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+    height: 100vh;
+    border-radius: 5px;
+}
+
+.close-modal {
+    background: linear-gradient(90deg, rgb(211, 211, 211) 0%, rgb(156, 156, 156) 100%);
+    color: #b11212;
+    border-radius: 10px;
+    width: 40px;
+
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.close-model iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px
+}
+
+/*Pré config pro JS*/
+
+.modal-aberto {
+    opacity: 1;
+    visibility: visible;
+}
+
+

@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+    body {
+        overflow: visible;
+    }
+
+    .background-video {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        height: auto;
+        flex-wrap: wrap; /*Vai quebrar o elemento jogando ele pra baixo do outro*/
+        gap: 30px;
+    }
+
+    .container .mario-img {
+        max-width: 50%;
+    }
+
+    .container .information {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .title-mario {
+        max-width: 75%;
+    }
+
+    .modal .close-modal {
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (max-width: 376px) {
+    .modal #video {
+        width: 250px;
+        height: 140px;
+    }
+}
