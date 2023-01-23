@@ -27,6 +27,10 @@
     .description {
         text-align: center;
     }
+
+    .myname-text {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -49,11 +53,19 @@
         width: 300px;
         height: 169px;
     }
+
+    .myname-text {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 376px) {
     .modal #video {
         width: 250px;
         height: 140px;
+    }
+
+    .myname-text {
+        margin-left: 0px;
     }
 }
